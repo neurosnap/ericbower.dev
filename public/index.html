@@ -3,13 +3,125 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Eric Bower</title>
-  <meta name="description" content="Personal development website">
+  <meta name="description" content="personal development website">
   <meta name="author" content="Eric Bower">
+
+  <style>
+    html, body {
+      height: 100vh;
+      width: 100vw;
+      font-size: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+    }
+
+    body {
+      margin: 0;
+      background: url('purple_rain.gif') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a, a:visited, a:hover {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin: 3px 0;
+    }
+
+    a:hover {
+      color:rgb(245, 118, 162);
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    blockquote {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      padding: 30px 0;
+      width: 100%;
+      max-width: 600px;
+      z-index: 1;
+      margin: 0 auto 80px auto;
+      align-self: center;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+    }
+
+    blockquote h1 {
+      position: relative;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1;
+      margin: 0;
+    }
+
+    blockquote:after {
+      position: absolute;
+      content: "”";
+      color: rgba(255, 255, 255, 1);
+      font-size: 10rem;
+      line-height: 0;
+      bottom: -43px;
+      right: 30px;
+    }
+
+    @media all and (min-width: 600px) {
+      blockquote h1 {
+        font-size: 60px;
+      }
+    }
+
+    blockquote h4 {
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      padding-top: 20px;
+      z-index: 1;
+      font-style: italic;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
+  </style>
 </head>
 
 <body>
-  Welcome to ericbower.dev
+  <div class="container">
+    <blockquote>
+      <h1>We're in the gutter, but some of us are looking at the stars.</h1>
+      <h4>&mdash;Oscar Wilde</h4>
+    </blockquote>
+    <div class="links">
+      <a href="mailto:me@ericbower.dev">email</a>
+      <a href="https://erock.io" target="_blank">blog</a>
+      <a href="https://github.com/neurosnap" target="_blank">github</a>
+      <a href="https://stackoverflow.com/users/1713216/neurosnap" target="_blank">stack overflow</a>
+    </div>
+  </div>
 </body>
 </html>
